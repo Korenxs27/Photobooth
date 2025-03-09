@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photobooth</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Photobooth</h1>
+      <div class="camera-container">
+        <video id="video" autoplay></video>
+        <div id="countdown"></div>
+      </div>
+      <div class="controls">
+        <h4>Frame Color</h4>
+        <input type="color" id="frameColor" value="#ffcc00" />
+        <button id="capture">Capture</button>
+        <button id="reset">Reset</button>
+        <button id="download">Download</button>
+      </div>
+      <div class="hasil"><h1>HASIL</h1></div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 | By Muhammad Faqih Hasan</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

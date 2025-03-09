@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Goblin+One&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --gradient-1: linear-gradient(to bottom right, #202020, #333533);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: var(--gradient-1);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  color: #ffd100;
+  animation: slideIn 2s ease-in-out;
+}
+h4 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+  color: white;
+  animation: slideIn 2s ease-in-out;
+}
+
+.camera-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #000;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: slideIn 2s ease-in-out;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+}
+
+#countdown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  background-color: #333533;
+  border-radius: 10px;
+  color: #fff;
+  display: none;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 2s ease-in-out;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #202020;
+  margin: 5px;
+  border-radius: 10%;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  animation: slideIn 2s ease-in-out;
+}
+button:hover {
+  background-color: #333533;
+  color: #ffcc00;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  border: 5px solid #ffcc00;
+  border-radius: 10px;
+  margin: 5px;
+  object-fit: cover;
+  animation: slideIn 2s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

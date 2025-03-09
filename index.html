@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Goblin+One&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      /* Reset CSS */
+      :root {
+        --gradient-1: linear-gradient(to bottom right, #202020, #333533);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-image: url(img/PHOTO\ BOOTH.png);
+        background-position: center;
+        backdrop-filter: blur(2px);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 4rem;
+        color: #ffd100;
+        font-family: "Dancing Script", cursive;
+        text-shadow: 3px 2px 1px #333533;
+        text-align: center;
+        margin-bottom: 20px;
+        animation: slideIn 1.5s ease-in-out;
+      }
+
+      .welcome-container p {
+        font-size: 2rem;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        text-shadow: 2px 1px 1px #333533;
+        color: #ffd100;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color: #202020;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        animation: bounce 2s infinite;
+      }
+
+      .button:hover {
+        background-color: #333533;
+      }
+
+      /* Footer */
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.9rem;
+      }
+      footer p {
+        font-family: "Playfair Display", serif;
+      }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem; /* Ukuran font lebih kecil untuk tablet */
+        }
+
+        p {
+          font-size: 1rem; /* Ukuran font lebih kecil untuk tablet */
+        }
+
+        .welcome-container {
+          padding: 20px; /* Padding lebih kecil untuk tablet */
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2rem; /* Ukuran font lebih kecil untuk mobile */
+        }
+
+        p {
+          font-size: 0.9rem; /* Ukuran font lebih kecil untuk mobile */
+        }
+
+        .button {
+          font-size: 0.9rem; /* Ukuran tombol lebih kecil untuk mobile */
+          padding: 8px 16px;
+        }
+
+        footer {
+          font-size: 0.8rem; /* Ukuran font footer lebih kecil untuk mobile */
+        }
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="welcome-container">
+      <h1>Welcome!</h1>
+      <p>Selamat datang di website Photobooth</p>
+      <a href="photobooth.html" class="button">Start</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 | By Muhammad Faqih Hasan</p>
+    </footer>
+  </body>
+</html>
